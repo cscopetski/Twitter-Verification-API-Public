@@ -27,7 +27,6 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    // 956e09f8-8732-4dee-b8a5-0a69bc90c7ce
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic()
